@@ -6,6 +6,7 @@
     <RootNamespace>mysite</RootNamespace>
     <SuppressEnvironmentCreationPrompt>True</SuppressEnvironmentCreationPrompt>
     <SuppressConfigureTestFrameworkPrompt>true</SuppressConfigureTestFrameworkPrompt>
+    <WebBrowserPort>8000</WebBrowserPort>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -34,10 +35,12 @@
   <ItemGroup>
     <Compile Include="app\forms.py" />
     <Compile Include="app\models.py" />
+    <Compile Include="chat\models.py" />
     <Compile Include="app\tests.py" />
     <Compile Include="app\views.py" />
     <Compile Include="app\__init__.py" />
     <Compile Include="app\migrations\__init__.py" />
+    <Compile Include="chat\consumers - Copy.py" />
     <Compile Include="chat\consumers.py">
       <SubType>Code</SubType>
     </Compile>
@@ -71,11 +74,15 @@
     <Folder Include="app\templates\app\" />
     <Folder Include="chat\" />
     <Folder Include="chat\migrations\" />
+    <Folder Include="chat\static\" />
     <Folder Include="chat\templates\" />
     <Folder Include="chat\templates\chat\" />
     <Folder Include="mysite\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\static\ReconnectingWebSocket.js" />
+    <Content Include="chat\static\ReconnectingWebSocket.js" />
+    <Content Include="chat\static\style.css" />
     <Content Include="chat\templates\chat\index.html" />
     <Content Include="chat\templates\chat\room.html" />
     <Content Include="requirements.txt" />
