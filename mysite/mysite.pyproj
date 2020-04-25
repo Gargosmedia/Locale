@@ -35,6 +35,12 @@
   <ItemGroup>
     <Compile Include="app\forms.py" />
     <Compile Include="app\models.py" />
+    <Compile Include="chat\admin.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="chat\apps.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="chat\models.py" />
     <Compile Include="app\tests.py" />
     <Compile Include="app\views.py" />
@@ -81,6 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\static\ReconnectingWebSocket.js" />
+    <Content Include="chat\static\Main.js" />
     <Content Include="chat\static\ReconnectingWebSocket.js" />
     <Content Include="chat\static\style.css" />
     <Content Include="chat\templates\chat\index.html" />
