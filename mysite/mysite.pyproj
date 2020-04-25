@@ -6,6 +6,7 @@
     <RootNamespace>mysite</RootNamespace>
     <SuppressEnvironmentCreationPrompt>True</SuppressEnvironmentCreationPrompt>
     <SuppressConfigureTestFrameworkPrompt>true</SuppressConfigureTestFrameworkPrompt>
+    <WebBrowserPort>8000</WebBrowserPort>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -72,11 +73,15 @@
     <Folder Include="app\templates\app\" />
     <Folder Include="chat\" />
     <Folder Include="chat\migrations\" />
+    <Folder Include="chat\static\" />
     <Folder Include="chat\templates\" />
     <Folder Include="chat\templates\chat\" />
     <Folder Include="mysite\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="chat\static\Main.js" />
+    <Content Include="chat\static\reconnecting-websocket.js" />
+    <Content Include="chat\static\Style.css" />
     <Content Include="chat\templates\chat\index.html" />
     <Content Include="chat\templates\chat\room.html" />
     <Content Include="requirements.txt" />
