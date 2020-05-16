@@ -86,6 +86,7 @@
     <Folder Include="mysite\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="chat\static\Geo.js" />
     <Content Include="chat\static\Main.js" />
     <Content Include="chat\static\ReconnectingWebSocket.js" />
     <Content Include="chat\static\style.css" />

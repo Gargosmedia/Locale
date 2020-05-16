@@ -95,6 +95,7 @@
         var message = messageInputDom.value;
         chatSocket.send(JSON.stringify({
             'command': 'new_message',
+            'chat': roomName,
             'message': message,
             'from': username
         }));
@@ -103,7 +104,7 @@
     };
 
     function fetchMessages() {
-      chatSocket.send(JSON.stringify({'command': 'fetch_messages' }));
+      chatSocket.send(JSON.stringify({'command': 'fetch_messages', 'chat': roomName }));
     }
 
     function createMessage(data) {

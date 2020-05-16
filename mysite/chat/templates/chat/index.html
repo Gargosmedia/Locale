@@ -1,14 +1,20 @@
-<!-- chat/templates/chat/index.html -->
+﻿<!-- chat/templates/chat/index.html -->
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8"/>
     <title>Chat Rooms</title>
+    {% load static %}
+
 </head>
 <body>
+    <h1>Locale</h1>
     What chat room would you like to enter?<br>
     <input id="room-name-input" type="text" size="100"><br>
-    <input id="room-name-submit" type="button" value="Enter">
+    <button id="room-name-submit">Enter</button><br/>
+   
+     
+
 
     <script>
         document.querySelector('#room-name-input').focus();
@@ -23,5 +29,24 @@
             window.location.pathname = '/chat/' + roomName + '/';
         };
     </script>
+
+
+
+
+    <!-- chat/templates/chat/index.html -->
+
+
+
+        <br />
+        <button id="find-me">Show my location</button><br/>
+        <p id = "status"></p>
+        <a id = "map-link" target="_blank"></a>
+        <p><a href="/chat/trashbin" class="btn btn-primary btn-large">Trashbin &raquo;</a></p>
+        <script src="{% static 'Geo.js' %}"></script>
+
+
+
+
+
 </body>
 </html>

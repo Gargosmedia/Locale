@@ -25,7 +25,7 @@ SECRET_KEY = '4e4f45d5-7f0b-415f-888e-5934f7ecd86d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['421b3ff8.ngrok.io', 'localhost']
+ALLOWED_HOSTS = ['633eca01.ngrok.io', 'localhost']
 
 # Application references
 # https://docs.djangoproject.com/en/2.1/ref/settings/#std:setting-INSTALLED_APPS
@@ -82,7 +82,7 @@ CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
-            "hosts": [('0.tcp.ngrok.io', 17891)],  
+            "hosts": [('0.tcp.ngrok.io', 16890)],  
         },
     },
 }
